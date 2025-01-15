@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "scripts": {
+    "playwright:open": "npx playwright test",
+    "format:staged": "pretty-quick --staged",
+    "lint": "eslint . --fix",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@playwright/test": "^1.49.1",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.17.0",
+    "eslint-plugin-playwright": "^2.1.0",
+    "faker-br": "^0.4.1",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "prettier": "^3.4.2",
+    "pretty-quick": "^4.0.0"
+  }
+}
