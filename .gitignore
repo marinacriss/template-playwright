@@ -142,3 +142,5 @@ cypress/videos
 cypress.env.json
 
 test-results
+
+playwright-report
