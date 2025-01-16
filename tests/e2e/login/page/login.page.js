@@ -1,6 +1,6 @@
 import selector from './login.selector';
 import validEmailGenerator from '../../../helpers/valid-email-generator';
-import userCredentials from '../../../fixtures/user-credentials.json' assert { type: 'json' };
+import userCredentials from '../../../fixtures/user-credentials.json' with { type: 'json' };
 
 const open = async () => {
   const url = 'http://automationexercise.com';

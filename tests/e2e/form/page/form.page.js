@@ -1,18 +1,18 @@
-import selector from "..//page/form.selector";
-import userCredentials from "../../../fixtures/user-credentials.json" assert { type: 'json' };
+import selector from '..//page/form.selector';
+import userCredentials from '../../../fixtures/user-credentials.json' with { type: 'json' };
 
 const fillAccountInformation = async () => {
-    await page.click(selector.TITLE);
-    await page.fill(selector.PASSWORD, userCredentials.password);
-    await page.locator(selector.BIRTH_DAY).selectOption(userCredentials.days);
-    await page.locator(selector.BIRTH_MONTH).selectOption(userCredentials.months);
-    await page.locator(selector.BIRTH_YEAR).selectOption(userCredentials.years);
-}
+  await page.click(selector.TITLE);
+  await page.fill(selector.PASSWORD, userCredentials.password);
+  await page.locator(selector.BIRTH_DAY).selectOption(userCredentials.days);
+  await page.locator(selector.BIRTH_MONTH).selectOption(userCredentials.months);
+  await page.locator(selector.BIRTH_YEAR).selectOption(userCredentials.years);
+};
 
 const selectCheckBoxes = async () => {
   await page.click(selector.NEWSLETTER);
   await page.click(selector.SPECIALOFFERS);
-}
+};
 
 const fillAdressInformation = async () => {
   await page.fill(selector.FIRST_NAME, userCredentials.firstName);
@@ -26,8 +26,7 @@ const fillAdressInformation = async () => {
   await page.fill(selector.ZIPCODE, userCredentials.zipcode);
   await page.fill(selector.MOBILENUMBER, userCredentials.mobile);
   await page.click(selector.BTT_CREATE_ACCOUNT);
-}
-
+};
 
 export default {
   fillAccountInformation,
