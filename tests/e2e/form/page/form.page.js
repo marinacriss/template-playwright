@@ -25,6 +25,9 @@ const fillAdressInformation = async () => {
   await page.fill(selector.CITY, userCredentials.city);
   await page.fill(selector.ZIPCODE, userCredentials.zipcode);
   await page.fill(selector.MOBILENUMBER, userCredentials.mobile);
+};
+
+const clickCreatedCount = async () => {
   await page.click(selector.BTT_CREATE_ACCOUNT);
 };
 
@@ -32,4 +35,5 @@ export default {
   fillAccountInformation,
   selectCheckBoxes,
   fillAdressInformation,
+  clickCreatedCount,
 };

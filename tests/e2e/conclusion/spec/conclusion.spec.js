@@ -1,9 +1,11 @@
 import { test } from '@playwright/test';
 import conclusionPage from '../page/conclusion.page';
 import conclusionValidation from '../validation/conclusion.validation';
+import formSetup from '../../../support/form.setup';
 
 test.beforeEach(async ({ page }) => {
   global.page = page;
+  await formSetup();
 });
 
 test.describe('Register conclusion', () => {
